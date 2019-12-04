@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wGb-FH-48s">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="rvb-EO-r6f">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="Login View Controller" id="wGb-FH-48s" customClass="ViewController" customModule="Bahama_Air" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z7v-B1-cju">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ajR-Mt-zC1" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud 1" translatesAutoresizingMaskIntoConstraints="NO" id="DRk-eY-y0I" userLabel="Cloud 1 Image View">
+                                <rect key="frame" x="-131" y="95" width="159" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="UxN-Xd-8YZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="pLc-aC-5z8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud 2" translatesAutoresizingMaskIntoConstraints="NO" id="oGA-14-U1T" userLabel="Cloud 2 Image View">
+                                <rect key="frame" x="217" y="126" width="160" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="key-QZ-GgB"/>
+                                    <constraint firstAttribute="height" constant="50" id="vSe-Kd-EV4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud 3" translatesAutoresizingMaskIntoConstraints="NO" id="zNY-NF-nV6" userLabel="Cloud 3 Image View">
+                                <rect key="frame" x="244" y="294" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="wz3-3A-N9E"/>
+                                    <constraint firstAttribute="height" constant="35" id="xTd-HD-m7p"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud 4" translatesAutoresizingMaskIntoConstraints="NO" id="X5g-qM-r39" userLabel="Cloud 4 Image View">
+                                <rect key="frame" x="22" y="314" width="115" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="POB-qg-ZFw"/>
+                                    <constraint firstAttribute="width" constant="115" id="mif-qQ-6dO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bahama Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-E9-OGJ" userLabel="Header Label">
+                                <rect key="frame" x="100" y="60" width="175" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ODX-Sv-igT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TpL-YK-Yue" userLabel="Username Text Field">
+                                <rect key="frame" x="47.5" y="118" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CbJ-Kd-yrw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="IrG-EV-rAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wGb-FH-48s" id="b1O-zq-Ifs"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v88-tJ-Spm" userLabel="Password Text Field">
+                                <rect key="frame" x="47.5" y="164" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vg4-h9-kQj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="light" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wGb-FH-48s" id="om5-Dx-qdj"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIA-aY-37J">
+                                <rect key="frame" x="62.5" y="214" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.83921568629999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="53f-QP-EtW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="OfW-pA-rPu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                <color key="tintColor" red="0.0" green="0.40784313729999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login" destination="wGb-FH-48s" eventType="touchUpInside" id="qSn-O3-Snh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oGA-14-U1T" firstAttribute="trailing" secondItem="gDe-mQ-l0e" secondAttribute="trailing" constant="2" id="13i-Oi-WiI"/>
+                            <constraint firstItem="X5g-qM-r39" firstAttribute="top" secondItem="uIA-aY-37J" secondAttribute="bottom" constant="50" id="2cW-fG-joy"/>
+                            <constraint firstItem="TpL-YK-Yue" firstAttribute="top" secondItem="ci2-E9-OGJ" secondAttribute="bottom" constant="24" id="C6O-6R-S3O"/>
+                            <constraint firstItem="v88-tJ-Spm" firstAttribute="top" secondItem="oGA-14-U1T" secondAttribute="bottom" constant="-12" id="KhZ-M8-1QX"/>
+                            <constraint firstItem="uIA-aY-37J" firstAttribute="centerX" secondItem="Z7v-B1-cju" secondAttribute="centerX" id="Moh-6V-2oE"/>
+                            <constraint firstItem="X5g-qM-r39" firstAttribute="leading" secondItem="gDe-mQ-l0e" secondAttribute="leading" constant="22" id="Nat-Gv-3Ww"/>
+                            <constraint firstItem="v88-tJ-Spm" firstAttribute="width" secondItem="TpL-YK-Yue" secondAttribute="width" id="PEN-xk-lPg"/>
+                            <constraint firstItem="uIA-aY-37J" firstAttribute="top" secondItem="v88-tJ-Spm" secondAttribute="bottom" constant="20" id="Tad-zS-vAn"/>
+                            <constraint firstItem="ci2-E9-OGJ" firstAttribute="top" secondItem="gDe-mQ-l0e" secondAttribute="top" constant="40" id="Xiq-Rc-gTU"/>
+                            <constraint firstItem="TpL-YK-Yue" firstAttribute="centerX" secondItem="Z7v-B1-cju" secondAttribute="centerX" id="hxr-t7-y0f"/>
+                            <constraint firstItem="ci2-E9-OGJ" firstAttribute="centerX" secondItem="gDe-mQ-l0e" secondAttribute="centerX" id="ihu-hw-Z30"/>
+                            <constraint firstItem="zNY-NF-nV6" firstAttribute="top" secondItem="uIA-aY-37J" secondAttribute="bottom" constant="30" id="ioe-h6-sNB"/>
+                            <constraint firstItem="v88-tJ-Spm" firstAttribute="centerX" secondItem="Z7v-B1-cju" secondAttribute="centerX" id="o5j-y3-VSq"/>
+                            <constraint firstItem="gDe-mQ-l0e" firstAttribute="leading" secondItem="DRk-eY-y0I" secondAttribute="leading" constant="131" id="ska-Ku-PNb"/>
+                            <constraint firstItem="v88-tJ-Spm" firstAttribute="top" secondItem="TpL-YK-Yue" secondAttribute="bottom" constant="16" id="sx3-VQ-t0G"/>
+                            <constraint firstItem="gDe-mQ-l0e" firstAttribute="trailing" secondItem="zNY-NF-nV6" secondAttribute="trailing" constant="56" id="uGm-9a-9Pg"/>
+                            <constraint firstItem="DRk-eY-y0I" firstAttribute="bottom" secondItem="TpL-YK-Yue" secondAttribute="bottom" constant="-3" id="y6O-ks-duj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gDe-mQ-l0e"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloud1ImageView" destination="DRk-eY-y0I" id="6zj-1r-1YL"/>
+                        <outlet property="cloud1LeadingConstraint" destination="ska-Ku-PNb" id="GwP-3S-7Ic"/>
+                        <outlet property="cloud2ImageView" destination="oGA-14-U1T" id="dcB-wX-cVN"/>
+                        <outlet property="cloud2TrailingConstraint" destination="13i-Oi-WiI" id="8Pi-uQ-SuW"/>
+                        <outlet property="cloud3ImageView" destination="zNY-NF-nV6" id="ySw-CY-WLI"/>
+                        <outlet property="cloud3TrailingConstraint" destination="uGm-9a-9Pg" id="iRo-VO-6c6"/>
+                        <outlet property="cloud4ImageView" destination="X5g-qM-r39" id="CZC-To-SBF"/>
+                        <outlet property="cloud4LeadingConstraint" destination="Nat-Gv-3Ww" id="Dhk-Kz-CpQ"/>
+                        <outlet property="headerLabel" destination="ci2-E9-OGJ" id="J2S-sf-lTe"/>
+                        <outlet property="headerLabelCenterConstraint" destination="ihu-hw-Z30" id="c3c-a2-pEM"/>
+                        <outlet property="loginButton" destination="uIA-aY-37J" id="xXC-oh-L7X"/>
+                        <outlet property="loginButtonCenterConstraint" destination="Moh-6V-2oE" id="lVB-QF-skn"/>
+                        <outlet property="passwordTextField" destination="v88-tJ-Spm" id="yGy-uy-6dz"/>
+                        <outlet property="passwordTextFieldCenterConstraint" destination="o5j-y3-VSq" id="ft6-o3-uy3"/>
+                        <outlet property="usernameTextField" destination="TpL-YK-Yue" id="Jmq-lP-G9D"/>
+                        <outlet property="usernameTextFieldCenterConstraint" destination="hxr-t7-y0f" id="IPk-0g-4i2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpG-GQ-vG6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="320" height="568"/>
+        <image name="Cloud 1" width="159" height="50"/>
+        <image name="Cloud 2" width="138" height="49"/>
+        <image name="Cloud 3" width="74" height="35"/>
+        <image name="Cloud 4" width="115" height="50"/>
+    </resources>
+</document>
